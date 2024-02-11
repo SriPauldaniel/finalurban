@@ -1,0 +1,249 @@
+*{
+    margin:0% 
+}
+
+.bgimg {
+  background-image: url("img2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: fit-content;
+}
+@media (max-width: 800px) { 
+  .bgimg{
+    background-image: url("img2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+    width: 100%;
+  }
+}
+.Navbar .list {
+    display: flex;
+    list-style: none;
+    display: flex;
+    font-size: larger;
+    color: black;
+    gap: 3rem;
+    align-items: center;
+}
+.Navbar .list li:hover {
+    color:chocolate;
+}
+
+.toggle-button {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 10px;
+}
+.txt1{
+  padding: 8% 5%; 
+  color: rgb(114, 114, 114); 
+  font-size: 55px;
+}
+
+.txt2{
+  padding: 8% 5%; 
+  color: rgb(114, 114, 114); 
+  font-size: 40px; 
+  margin-top: -5%;
+}
+
+.txt3{
+  padding: 8% 5%; 
+  color: rgb(114, 114, 114); 
+  font-size: 40px; 
+  margin-top: -15%;
+}
+@media (max-width:600px) {
+  .txt1{
+    font-size: 35px;
+  }
+  .txt2{
+    font-size: 20px;
+  }
+  .txt3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .toggle-button {
+      display: block;
+  }
+  .navbar .list {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+  }
+  .navbar .user {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.Navbar .user {
+    list-style-type: none;
+    font-size: larger;
+    float: right;
+    height: 40%;
+    background-color: #04AA6D;
+    border-radius: 15%;
+    padding: 4px 8px;
+}
+.Navbar .user:hover {
+    color: #04AA6D;
+    background-color: #111;
+}
+.row1{
+    margin-top: 2%;
+    display: flex;
+}
+@media (max-width: 800px) {
+    .row1 {
+      flex-direction: column;
+    }
+  }
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.column1 {
+    float: left;
+    margin-left: 5%;
+    width: 45%;
+    padding: 10px;
+    height: auto;
+  }
+  @media (max-width:800px) {
+    .column1{
+        width: 90%;
+    }
+  }
+
+  .sizing {
+    height: 616px; width: 616px;
+  }
+
+  @media (max-width: 800px) {
+    .sizing {
+      height: 325px;
+      width: 320px;
+    }
+  }
+  .column {
+    float: left;
+    margin-left: 2%;
+    width: 90%;
+    padding: 10px;
+    height: auto;
+    border-radius: 10%;
+    height: 300px;
+    margin-top: 10%;
+    border: 1px solid rgb(208, 207, 207);
+  }
+
+  .column img{
+    padding: 0 40%;
+    height: 60px;
+    width: 60px;
+  }
+
+  .column h3{
+    text-align: center;
+  }
+  .column2 {
+    float: right;
+    width: 50%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 10px;
+    height: auto;
+  }
+  .common {
+    height: fit-content;
+    padding-bottom: 1%;
+    font-size: larger; 
+    border-radius: 10%; 
+    background-color: rgb(237, 237, 237);
+    width: 30%;
+  }
+
+  .book {
+    height: 90%;
+    width: 100%;
+    background-size: cover;
+  }
+  .working {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 2% 6%;
+  }
+  .card {
+    background-color: rgb(236, 236, 236);
+    padding: 2% 2%;
+    font-size: 22px;
+    margin: 0 1%;
+  }
+  .card h4:hover{
+    color: rgb(36, 180, 209);
+  }
+
+  @media (max-width: 800px) {
+    .working{
+        flex-direction: column;
+        width: 90%;
+    }
+    .card {
+        margin-top: 1%;
+    }
+  }
+  .working img{
+    padding: 0 40%;
+    height: 60px;
+    width: 60px;
+  }
+  .slider-container {
+    position: relative;
+    width: 83%;
+    margin: 0 7%;
+    overflow: hidden;
+    margin-bottom: 2%;
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .slider img {
+    width: 110%;
+    margin-left: 2%;
+    height: auto;
+  }
+  .slider img:hover {
+    height: 110%;
+  }
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+  }
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+  }
